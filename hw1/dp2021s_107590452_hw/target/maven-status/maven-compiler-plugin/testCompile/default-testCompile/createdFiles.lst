@@ -1,0 +1,4 @@
+org\ntutssl\termfrequency\AppTest.class
+org\ntutssl\termfrequency\DataStorageManagerTest.class
+org\ntutssl\termfrequency\StopWordManagerTest.class
+org\ntutssl\termfrequency\WordFrequencyManagerTest.class
