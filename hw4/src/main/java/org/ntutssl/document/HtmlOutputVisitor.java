@@ -23,14 +23,14 @@ public class HtmlOutputVisitor implements Visitor<String> {
 
     while(it.hasNext()){
       Document temp = it.next();
-      HtmlOutputVisitor visitor = new HtmlOutputVisitor();
-      temp.accept(visitor);
+      //HtmlOutputVisitor visitor = new HtmlOutputVisitor();
+      temp.accept(this);
 
-      for(int i = 0 ; i < article.getLevel() ; i++){
-        this.result += "  ";
-      }
+//       for(int i = 0 ; i < article.getLevel() ; i++){
+//         this.result += "  ";
+//       }
       
-      this.result += visitor.getResult();
+//       this.result += visitor.getResult();
     }
 
     for(int i = 1 ; i < article.getLevel() ; i++){
