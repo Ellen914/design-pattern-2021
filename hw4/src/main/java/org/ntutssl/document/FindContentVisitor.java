@@ -60,14 +60,14 @@ public class FindContentVisitor implements Visitor {
     //
     while(it.hasNext()) {
       Document temp = it.next();
-      FindContentVisitor fcv = new FindContentVisitor(target);
+      //FindContentVisitor fcv = new FindContentVisitor(target);
       
-      temp.accept(fcv);
-      List<Document> fcvResult = fcv.getResult();
+      temp.accept(this);
+//       List<Document> fcvResult = fcv.getResult();
 
-      for(Document d : fcvResult) {
-        result.add(d);
-      }
+//       for(Document d : fcvResult) {
+//         result.add(d);
+//       }
     }
   }
   
